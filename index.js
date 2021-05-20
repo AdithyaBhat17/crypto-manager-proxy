@@ -42,7 +42,7 @@ const CMC_KEY = process.env.CMC_KEY || "";
       res.send(data);
     });
 
-    app.get("/", () => {
+    app.get("/", (_, res) => {
       res.json({ message: "Hello!" });
     });
 
