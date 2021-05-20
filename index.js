@@ -42,6 +42,10 @@ const CMC_KEY = process.env.CMC_KEY || "";
       res.send(data);
     });
 
+    app.get("/", () => {
+      res.send("Hello!");
+    });
+
     app.listen(PORT, () => {
       console.log("Server up and running 🚀");
     });
