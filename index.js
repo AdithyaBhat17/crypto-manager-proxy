@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://mudrex.vercel.app"],
+    origin: ["http://localhost:3000", "https://mudrex.vercel.app", /https:\/\/[a-z]+.adithyabhat.com/u],
   })
 );
 
